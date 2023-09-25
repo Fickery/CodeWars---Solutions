@@ -1,0 +1,6 @@
+function deleteNth(arr,n){
+  const count = {};
+  return arr.filter(item => (count[item] = (count[item] || 0) + 1) <= n);
+}
+
+console.log(deleteNth([1,2,3,1,2,1,2,3], 1))
