@@ -1,0 +1,9 @@
+function stray(n) {
+	let r = 0;
+	for(let num of n) {
+		r ^= num
+	}
+	return r
+}
+
+console.log(stray([1,1,1,21,1,2,2]))
